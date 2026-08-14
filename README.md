@@ -1,15 +1,9 @@
 Introduction
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
+
+TODO: This Project assigmnet is to built basic flask application 
 
 Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-
-Installation process
-Software dependencies
-Latest releases
-API references
-Project: Basic Flask Application
-What you need to build: A Python fi le that runs a local web server with two working endpoints.
 
 Endpoint Expected Response
 / Welcome to the App
