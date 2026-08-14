@@ -7,3 +7,12 @@ TODO: Guide users through getting your code up and running on their own system. 
 2.	Software dependencies
 3.	Latest releases
 4.	API references
+
+Project: A Flask-based in-memory password manager with three REST endpoints.
+
+Endpoints implemented:
+
+POST /add — Accepts a JSON body (username, password), validates the fields exist, and stores them in an in-memory Python dictionary. 
+Returns 201 on success, 400 if the body is missing required fields.
+GET /get/<username> — Looks up a username in the dictionary. Returns the password with 200 if found, or a 404 error if not.
+DELETE /delete/<username> — Removes a username's record from the dictionary. Returns 200 with a confirmation message if deleted, or 404 if the username doesn't exist.
