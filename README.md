@@ -2,6 +2,8 @@ Introduction
 
 TODO: This Project assigmnet is to built basic flask application 
 
+Getting Started
+
 Project: Basic Flask Application
 What you need to build: A Python fi le that runs a local web server with two working endpoints.
 
