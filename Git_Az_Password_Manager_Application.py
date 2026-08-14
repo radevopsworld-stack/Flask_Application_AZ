@@ -38,7 +38,21 @@ def get_password(username):
     # Step 3: If it exists, return the password.
     return jsonify({"username": username, "password": users[username]}), 200
 
+@app.route("/delete/<username>", methods=["DELETE"])
+def delete_user(username):
+    # Step 1: Check if the username exists in our dictionary.
+    if username not in users:
+        # Step 2: If not, return a proper 404 error — don't silently do nothing.
+        return jsonify({"error": f"Username '{username}' not found"}), 404
+ 
+    # Step 3: If it exists, remove it. .pop() removes the key and returns its value.
+    users.pop(username)
+ 
+    # Step 4: Confirm deletion back to the client.
+    return jsonify({"message": f"User '{username}' deleted successfully"}), 200
+
 
 if __name__ == "__main__":
     # debug=True auto-reloads the server when you save changes — helpful while developing.
     app.run(debug=True)
+    
