@@ -8,6 +8,15 @@ TODO: Guide users through getting your code up and running on their own system. 
 3.	Latest releases
 4.	API references
 
+Project: Basic Flask Application
+What you need to build: A Python fi le that runs a local web server with two working endpoints.
+
+Endpoint                       Expected Response
+/                              Welcome to the App
+/                              health
+App is running
+How to verify your work: Visit http://localhost:5000/ and http://localhost:5000/health in your browser. Both should show the correct text.
+
 Project: A Flask-based in-memory password manager with three REST endpoints.
 
 Endpoints implemented:
